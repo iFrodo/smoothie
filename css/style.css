@@ -1,0 +1,385 @@
+
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap");
+
+a {
+  text-decoration: none;
+  color: #433840;
+}
+body {
+  font-family: "Quicksand", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+}
+.container {
+  max-width: 1180px;
+  width: 100%;
+  margin: 0 auto;
+}
+.header {
+  padding-top: 20px;
+  margin-bottom: 13px;
+}
+.header__content {
+  display: flex;
+  align-content: center;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.header__menu-list {
+  display: flex;
+}
+.header__menu-item {
+  margin-right: 32px;
+  color: #433840;
+  transition: all 0.3s ease-in-out;
+}
+.active {
+  color: #fea3ac;
+}
+.header__menu-link {
+  transition: all 0.3s ease-in-out;
+}
+.header__menu-link:hover {
+  color: #fea3ac;
+  transition: all 0.3s ease-in-out;
+}
+
+.header__menu-item:nth-child(3n) {
+  margin-right: 0;
+}
+.logo__img {
+  width: 224px;
+  height: 73px;
+}
+.separator--svg {
+  position: relative;
+}
+.separator {
+  min-height: 400px;
+  position: relative;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: #ffffff;
+  margin-bottom: 66px;
+}
+.separator__title {
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 62px;
+}
+.separator__subtitle {
+  font-family: "Waiting for the Sunrise";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 30px;
+  line-height: 50px;
+}
+.separator--about {
+  background: transparent url(/img/sep2.jpg) center center no-repeat;
+}
+
+.separator::before {
+  content: "";
+  width: 100%;
+  height: 130px;
+  background: url(./img/bottom.svg) center center no-repeat;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.separator::after {
+  content: "";
+  width: 100%;
+  height: 110px;
+  background: url(./img/top.svg) center center no-repeat;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.flex-container {
+  display: flex;
+}
+.about {
+  margin-bottom: 86px;
+}
+.about__img {
+  max-width: 391px;
+  max-height: 421px;
+  margin-left: 54px;
+  margin-right: 48px;
+  margin-top: 65px;
+}
+.about__title {
+  font-size: 30px;
+  line-height: 38px;
+  color: #433840;
+  margin-bottom: 14px;
+  white-space: nowrap;
+}
+.about__menu:first-child {
+  padding-left: 45px;
+}
+
+.about__item {
+  margin-bottom: 78px;
+}
+.about__item:last-child {
+  margin-bottom: 0;
+}
+.about__desc {
+  font-size: 15px;
+  line-height: 24px;
+  color: #9a9a9a;
+}
+
+.separator--pink {
+  margin: 0 auto;
+  max-width: 1820px;
+  min-height: 600px;
+  overflow: hidden;
+  background: #fea3ac;
+  margin-bottom: 46px;
+}
+.info {
+  margin-left: 71px;
+}
+.info__list {
+}
+
+.info__item {
+  margin-right: 131px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+}
+.info__item:last-child {
+  margin-right: 0;
+}
+.info__ico {
+  width: 129px;
+  height: 135px;
+  margin-bottom: -14px;
+}
+.info__count {
+  font-family: "Waiting for the Sunrise";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 60px;
+  line-height: 99px;
+  color: #dfeeb6;
+  margin-bottom: -20px;
+}
+.info__list {
+  display: flex;
+  align-content: center;
+  flex-direction: row;
+  align-items: flex-start;
+}
+.info__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.info__subtitle {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 25px;
+}
+.team {
+  margin-bottom: 150px;
+}
+.team__header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-left: 68px;
+  margin-bottom: 60px;
+}
+.team__main-title {
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 62px;
+}
+.team__subtitle {
+  font-family: "Waiting for the Sunrise";
+  font-weight: 300;
+  font-size: 30px;
+  line-height: 30px;
+  color: #f7a1a8;
+}
+.team__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.team__name {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 38px;
+  color: #ffffff;
+}
+.team__post {
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 25px;
+  color: #433840;
+  text-align: left;
+  margin-bottom: 14px;
+}
+.team__desc {
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 25px;
+  color: #433840;
+  margin-bottom: 10px;
+}
+.team__item {
+  width: calc(50% - 201px);
+  background: #c9e3f4;
+  border-radius: 5px;
+  margin-bottom: 40px;
+  margin-left: 190px;
+  display: flex;
+  align-items: center;
+}
+.team__member {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.team__data {
+  display: flex;
+  flex-direction: column;
+  margin-left: 17px;
+}
+
+.team__img {
+  border-radius: 100%;
+  width: 330px;
+  height: 330px;
+  object-fit: cover;
+  object-position: 1px -46px;
+  margin-left: -190px;
+}
+
+.socials {
+  letter-spacing: 10px;
+  z-index: 1;
+}
+.team__item:nth-child(2),
+.team__item:nth-child(3) {
+  background: #dfeeb6;
+}
+/* .team__item:nth-child(3),
+.team__item:nth-child(4){
+  margin-left: 0;
+  margin-right: 190px;
+}
+.team__img:nth-child(3),
+.team__img:nth-child(4) {
+  order: 1;
+}
+.team__data:nth-child(3),
+.team__data:nth-child(4){
+  order: 2;
+}
+.team__img:nth-child(3),
+.team__img:nth-child(4){
+  margin-left: 0;
+  margin-right: -190px;
+} */
+.flex-contain {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.contacts {
+  background: url(../img/background.png) center center no-repeat;
+}
+.work-time__title,
+.contacts__title,
+.instagram-feed__title {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 38px;
+  color: #ffffff;
+  margin-bottom: 5px;
+  margin-top: 65px;
+}
+.work-time__list {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 35px;
+  color: #ffffff;
+}
+.work-time{
+  margin-bottom: 60px;
+}
+
+.work-time__hours {
+  color: #dfeeb6;
+}
+.contacts__link {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 35px;
+  color: #ffffff;
+}
+.tel {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 35px;
+  color: #ffffff;
+}
+.instagram-feed__title {
+  margin-bottom: 15px;
+}
+.instagram-feed {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  max-width: 350px;
+  min-height: 277px;
+  gap: 2px;
+}
+.instagramm-feed__img {
+  width: 97px;
+  height: 97px;
+  border-radius: 5px;
+  object-fit: cover;
+  margin-bottom: 15px;
+  margin-right: 15px;
+}
+.instagramm-feed__img:last-child {
+  margin-right: 0;
+}
+.footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  height: 60px;
+  background: #433840;
+}
+.copyrights {
+  font-size: 15px;
+  line-height: 35px;
+  color: #ffffff;
+}
+.socials--footer {
+  letter-spacing: 10px;
+  z-index: 1;
+}
